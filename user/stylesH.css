@@ -44,6 +44,9 @@ body {
 
 .buttons {
     margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 .btn {
@@ -52,13 +55,11 @@ body {
     border: none;
     font-size: 14px;
     cursor: pointer;
-    margin: 5px;
 }
 
 .btn.primary {
     background: #4caf50;
     color: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
 .btn.secondary {
@@ -71,11 +72,6 @@ body {
 .how-it-works {
     padding: 60px 20px;
     text-align: center;
-}
-
-.how-it-works h2 {
-    font-size: 26px;
-    margin-bottom: 40px;
 }
 
 .steps {
@@ -93,31 +89,11 @@ body {
     box-shadow: 0 10px 20px rgba(0,0,0,0.08);
 }
 
-.icon {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.card h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 14px;
-    color: #555;
-}
-
-/* What You Can Report */
+/* Report Types */
 .report-types {
     background: #eefaf0;
     padding: 60px 20px;
     text-align: center;
-}
-
-.report-types h2 {
-    font-size: 26px;
-    margin-bottom: 40px;
 }
 
 .report-grid {
@@ -135,168 +111,166 @@ body {
     box-shadow: 0 12px 25px rgba(0,0,0,0.08);
 }
 
-.card-icon {
-    background: #dfefff;
-    border-radius: 12px;
-    padding: 20px;
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-.report-card h3 {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.report-card p {
-    font-size: 14px;
-    color: #555;
-}
-
 footer {
-      text-align: center;
-      padding: 15px;
-      background: #2d6a4f;
-      color: white;
-      font-size: 0.9rem;
-    }
+    text-align: center;
+    padding: 15px;
+    background: #2d6a4f;
+    color: white;
+}
 
-    /* Main */
+/* =====================
+   STYLISH POPUP DIALOG
+   ===================== */
+
 .main {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
+    display: none;
     position: fixed;
-    top: 4%;
-    background-color: rgba(52, 52, 52, 0.235);
-    width: 100%;
-    height: 100%;
-    align-self: center;
-    justify-self: center;
-
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
 }
 
 .main > .card {
+    width: 400px;
     background: white;
-    width: 380px;
-    scale: 1.2;
-    padding: 20px;
-    border-radius: 14px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border-radius: 18px;
+    padding: 22px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+    animation: popup 0.35s ease;
 }
 
-/* Header */
+@keyframes popup {
+    from {
+        transform: scale(0.9) translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1) translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Card header */
 .card-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .card-top h2 {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 700;
 }
 
 .time {
     font-size: 12px;
-    color: #2e7d32;
     background: #e8f5e9;
+    color: #2e7d32;
     padding: 4px 10px;
     border-radius: 20px;
 }
 
 /* Sections */
 .section {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
 .title {
+    font-weight: 600;
     font-size: 14px;
     margin-bottom: 8px;
-    font-weight: 500;
 }
 
-.title span {
-    font-weight: normal;
-    color: gray;
-}
-
-/* Waste Selection */
+/* Waste selection */
 .waste-box {
     display: flex;
-    gap: 10px;
+    gap: 12px;
 }
 
 .waste {
     flex: 1;
     border: 2px solid #e0e0e0;
-    border-radius: 10px;
-    padding: 12px 6px;
+    border-radius: 14px;
+    padding: 14px 8px;
     text-align: center;
     cursor: pointer;
-    font-size: 22px;
+    background: #fafafa;
+    transition: all 0.25s ease;
+}
+
+.waste:hover {
+    border-color: #4caf50;
+    transform: translateY(-2px);
 }
 
 .waste p {
-    font-size: 12px;
-    margin-top: 5px;
+    margin-top: 6px;
+    font-size: 13px;
+    font-weight: 500;
 }
 
 .waste.active {
     border-color: #2e7d32;
     background: #e8f5e9;
+    box-shadow: 0 6px 15px rgba(46,125,50,0.3);
+}
+
+/* Upload box */
+.upload {
+    border: 2px dashed #cfcfcf;
+    border-radius: 14px;
+    text-align: center;
+    padding: 22px;
+    color: #666;
 }
 
 /* Inputs */
 select, textarea {
     width: 100%;
-    padding: 10px;
-    border-radius: 8px;
+    padding: 12px;
+    border-radius: 12px;
     border: 1px solid #ddd;
     outline: none;
 }
 
-textarea {
-    height: 70px;
-    resize: none;
+select:focus,
+textarea:focus {
+    border-color: #4caf50;
 }
 
-/* Upload */
-.upload {
-    border: 2px dashed #cfcfcf;
-    border-radius: 10px;
-    text-align: center;
-    padding: 20px;
-    color: #666;
-    font-size: 22px;
-}
-
-.upload p {
-    font-size: 13px;
-    margin-top: 6px;
-}
-
-/* Button */
-
-.buttons{
+/* Buttons */
+.buttons {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 10px;
+    margin-top: 10px;
 }
-.submit , .close {
+
+.submit, .close {
     width: 50%;
-    padding: 10px;
-    border: none;
+    padding: 12px;
     border-radius: 30px;
-    background: #43a047;
+    border: none;
     color: white;
-    font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
 }
-.close{
-    background-color: rgb(255, 66, 66);
+
+.submit {
+    background: #43a047;
 }
+
 .submit:hover {
     background: #388e3c;
+}
+
+.close {
+    background: #ff5252;
+}
+
+.close:hover {
+    background: #e53935;
 }
