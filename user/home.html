@@ -94,25 +94,26 @@
 
         <div class="section">
             <p class="title">2. Select Location</p>
-            <select>
-                <option>Main Canteen</option>
-                <option>Library</option>
-                <option>Hostel</option>
-                <option>Parking Area</option>
+            <select id="area">
+                <option value="main-canteen">Main Canteen</option>
+                <option value="library">Library</option>
+                <option value="hostel">Hostel</option>
+                <option value="parking">Parking Area</option>
             </select>
         </div>
 
         <div class="section">
             <p class="title">3. Upload Photo</p>
             <div class="upload">
-                📷 <input type="file" >
+                📷 <input type="file" accept="image/*" id="photoIP">
                 <p>Tap to upload or capture</p>
+                <label id="statusMessage"></label>
             </div>
         </div>
 
         <div class="section">
             <p class="title">4. Short Description <span>(optional)</span></p>
-            <textarea placeholder="Describe the issue..."></textarea>
+            <textarea placeholder="Describe the issue..." id="comments"></textarea>
         </div>
 
         <div class="buttons">
