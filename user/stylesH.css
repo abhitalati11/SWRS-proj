@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: #f5fff7;
+    color: #0f2d1d;
+}
+
+/* Header */
+.top-bar {
+    text-align: center;
+    padding: 12px;
+    width: 100%;
+    position: fixed;
+    font-weight: 600;
+    background: white;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #dff5e4, #e8f8ff);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.hero h1 span {
+    color: #1b7f5a;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #444;
+}
+
+.buttons {
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 12px 24px;
+    border-radius: 25px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.btn.primary {
+    background: #4caf50;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.btn.secondary {
+    background: white;
+    border: 2px solid #4caf50;
+    color: #4caf50;
+}
+
+/* How It Works */
+.how-it-works {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* What You Can Report */
+.report-types {
+    background: #eefaf0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.report-types h2 {
+    font-size: 26px;
+    margin-bottom: 40px;
+}
+
+.report-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.report-card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+}
+
+.card-icon {
+    background: #dfefff;
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.report-card h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.report-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+footer {
+      text-align: center;
+      padding: 15px;
+      background: #2d6a4f;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    /* Main */
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    position: fixed;
+    top: 4%;
+    background-color: rgba(52, 52, 52, 0.235);
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+
+}
+
+.card {
+    background: white;
+    width: 380px;
+    scale: 1.2;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Header */
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-top h2 {
+    font-size: 18px;
+}
+
+.time {
+    font-size: 12px;
+    color: #2e7d32;
+    background: #e8f5e9;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 18px;
+}
+
+.title {
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.title span {
+    font-weight: normal;
+    color: gray;
+}
+
+/* Waste Selection */
+.waste-box {
+    display: flex;
+    gap: 10px;
+}
+
+.waste {
+    flex: 1;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 12px 6px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.waste p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.waste.active {
+    border-color: #2e7d32;
+    background: #e8f5e9;
+}
+
+/* Inputs */
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+textarea {
+    height: 70px;
+    resize: none;
+}
+
+/* Upload */
+.upload {
+    border: 2px dashed #cfcfcf;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 22px;
+}
+
+.upload p {
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+/* Button */
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.submit , .close {
+    width: 50%;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+    background: #43a047;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.close{
+    background-color: rgb(255, 66, 66);
+}
+.submit:hover {
+    background: #388e3c;
+}
