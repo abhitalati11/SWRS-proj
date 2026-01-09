@@ -81,7 +81,7 @@ body {
 .steps {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
@@ -176,7 +176,7 @@ footer {
 
 }
 
-.card {
+.main > .card {
     background: white;
     width: 380px;
     scale: 1.2;
