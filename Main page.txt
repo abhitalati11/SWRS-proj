@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Waste Reporting System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #eef7f2;
+      color: #222;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 15px;
+      background: linear-gradient(135deg, #b7e4c7, #d8f3dc);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    header p {
+      margin: 10px 0 20px;
+      font-size: 1rem;
+    }
+
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .btn {
+      padding: 10px 22px;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+
+    .btn-primary {
+      background: #2d6a4f;
+      color: white;
+    }
+
+    .btn-outline {
+      background: white;
+      border: 2px solid #2d6a4f;
+      color: #2d6a4f;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 1.6rem;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card img {
+      width: 60px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      margin: 10px 0 6px;
+      font-size: 1.1rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #2d6a4f;
+      color: white;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <header>
+    <h1>Report Waste. Clean Campus.</h1>
+    <p>Smart Waste. Real Action.</p>
+    <p>Takes less than 1 minute. No login needed.</p>
+
+    <div class="btn-group">
+      <button class="btn btn-primary">Report an Issue</button>
+      <button class="btn btn-outline">Track Complaints</button>
+    </div>
+  </header>
+
+  <!-- WHAT YOU CAN REPORT -->
+  <section>
+    <h2 class="section-title">What You Can Report</h2>
+
+    <div class="card-grid">
+      <div class="card">
+        <img src="icons/garbage.png" alt="Garbage">
+        <h3>Garbage Piles</h3>
+        <p>Report unattended garbage heaps and overflowing bins.</p>
+      </div>
+
+      <div class="card">
+        <img src="icons/plastic.png" alt="Plastic">
+        <h3>Plastic / E-waste Dumping</h3>
+        <p>Report discarded plastic items or electronic waste.</p>
+      </div>
+
+      <div class="card">
+        <img src="icons/drainage.png" alt="Drainage">
+        <h3>Drainage / Water Issues</h3>
+        <p>Report clogged drains or water leakages.</p>
+      </div>
+
+      <div class="card">
+        <img src="icons/dustbin.png" alt="Dustbin">
+        <h3>Overflowing Dustbins</h3>
+        <p>Report public dustbins that are full and not cleared.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <h2 class="section-title">How It Works (3 Simple Steps)</h2>
+
+    <div class="card-grid">
+      <div class="card">
+        <img src="icons/select.png" alt="Step 1">
+        <h3>1. Select Waste Type</h3>
+        <p>Choose from garbage, plastic, or drainage.</p>
+      </div>
+
+      <div class="card">
+        <img src="icons/location.png" alt="Step 2">
+        <h3>2. Add Location & Photo</h3>
+        <p>Pin the spot and upload a picture.</p>
+      </div>
+
+      <div class="card">
+        <img src="icons/submit.png" alt="Step 3">
+        <h3>3. Submit & Track</h3>
+        <p>Send your report and track its status.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Smart Waste Reporting System © 2026
+  </footer>
+
+</body>
+</html>
+
