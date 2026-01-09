@@ -1,0 +1,229 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SWRS – Report Issue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+    <div class="logo">
+        ♻️ <span>SWRS</span>
+    </div>
+</header>
+
+<!-- MAIN CARD -->
+<div class="main">
+    <div class="card">
+
+        <div class="card-top">
+            <h2>Report Issue</h2>
+            <span class="time">Takes less than 1 minute</span>
+        </div>
+
+        <!-- STEP 1 -->
+        <div class="section">
+            <p class="title">1. Select Waste Type</p>
+            <div class="waste-box">
+                <div class="waste active">
+                    🗑️
+                    <p>Garbage</p>
+                </div>
+                <div class="waste">
+                    ♻️
+                    <p>Plastic / E-Waste</p>
+                </div>
+                <div class="waste">
+                    💧
+                    <p>Drainage Issue</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="section">
+            <p class="title">2. Select Location</p>
+            <select>
+                <option>Main Canteen</option>
+                <option>Library</option>
+                <option>Hostel</option>
+                <option>Parking Area</option>
+            </select>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="section">
+            <p class="title">3. Upload Photo <span>(optional)</span></p>
+            <div class="upload">
+                📷
+                <p>Tap to upload or capture</p>
+            </div>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="section">
+            <p class="title">4. Short Description <span>(optional)</span></p>
+            <textarea placeholder="Describe the issue..."></textarea>
+        </div>
+
+        <button class="submit">Submit Complaint</button>
+
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
+CSS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f7f6;
+}
+
+/* Navbar */
+.navbar {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #2e7d32;
+}
+
+/* Main */
+.main {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    width: 380px;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* Header */
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-top h2 {
+    font-size: 18px;
+}
+
+.time {
+    font-size: 12px;
+    color: #2e7d32;
+    background: #e8f5e9;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+/* Sections */
+.section {
+    margin-bottom: 18px;
+}
+
+.title {
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.title span {
+    font-weight: normal;
+    color: gray;
+}
+
+/* Waste Selection */
+.waste-box {
+    display: flex;
+    gap: 10px;
+}
+
+.waste {
+    flex: 1;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 12px 6px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.waste p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.waste.active {
+    border-color: #2e7d32;
+    background: #e8f5e9;
+}
+
+/* Inputs */
+select, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+textarea {
+    height: 70px;
+    resize: none;
+}
+
+/* Upload */
+.upload {
+    border: 2px dashed #cfcfcf;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 22px;
+}
+
+.upload p {
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+/* Button */
+.submit {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 30px;
+    background: #43a047;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: #388e3c;
+}
+
